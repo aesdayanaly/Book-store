@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --primary-color:#664343;
+    --dark-color: #3B3030;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('../image/bookstore.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center; 
+  height: 100vh;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.5rem; 
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header .logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+header .logo span {
+  font-size: 1.2rem; 
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: var(--primary-color);
+}
+
+.hero {
+  display: flex;
+  padding: 10rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: flex-start;
+}
+
+
+.hero .content {
+  max-width: 50%;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.hero p {
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.hero a {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.hero a:hover {
+  background-color: var(--dark-color);
+}
+.login-form-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  max-width: 400px; 
+  height: auto;
+  padding: 2rem;
+  border-radius: 8px; 
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+}
+
+.login-form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.login-form-container form h3 {
+  font-size: 1.25rem; 
+  color: var(--dark-color); 
+  text-transform: uppercase;
+  margin-bottom: 1rem; 
+  text-align: center;
+}
+
+.login-form-container form span {
+  font-size: 0.875rem;
+  padding-top: 0.5rem;
+  color: #777; 
+  display: inline-block; 
+  margin-right: auto; 
+}
+
+
+.login-form-container form .box {
+  width: 100%;
+  margin: 0.8rem 0;
+  font-size: 1rem;
+  border: var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  color: var(--dark-color); 
+  background-color: #f9f9f9; 
+  transition: border-color 0.3s ease; 
+}
+
+.login-form-container form .box:focus {
+  outline: none;
+  border-color: var(--primary-color);  
+}
+
+.login-form-container form .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.login-form-container form .checkbox label {
+  font-size: 1rem;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.2s ease; 
+}
+
+.login-form-container form .checkbox label:hover {
+  color: var(--primary-color);
+}
+
+.login-form-container form .btn {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: var(--primary-color); 
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form-container form .btn:hover {
+  background-color: #5a3a3a; 
+}
+
+.login-form-container form p {
+  padding-top: 1rem;
+  color: #777;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.login-form-container form p a {
+  color: var(--primary-color);
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.login-form-container form p a:hover {
+  color: #5a3a3a; 
+}
+
+.login-form-container #close-login-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.25rem;
+  color: var(--dark-color); 
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: color 0.3s ease;
+}
+
+.login-form-container #close-login-btn:hover {
+  color: var(--primary-color);
+}
